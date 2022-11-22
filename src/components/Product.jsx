@@ -8,7 +8,6 @@ import Header from "./Header";
 function Product() {
   return (
     <>
-      <Countdown />
       <Header />
       <div className="w-screen h-fit ">
         <div className="w-screen h-96 flex  justify-center items-center">

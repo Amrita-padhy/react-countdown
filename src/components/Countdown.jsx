@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineShoppingCart } from "react-icons/ai";
 
-function Countdown() {
+function Countdown({ onHideCountdown }) {
   const [days, setDays] = useState("00");
   const [hours, setHours] = useState("00");
   const [minutes, setMinutes] = useState("00");
@@ -45,7 +45,7 @@ function Countdown() {
     <>
       <div className="w-screen h-1/5 bg-yellow-400 p-1 ">
         <div className="countDown text-3xl flex justify-end ">
-          <AiOutlineClose />
+          <AiOutlineClose onClick={onHideCountdown} />
         </div>
         <div className=" w-4/5 h-20 m-auto">
           <div className=" flex sm:justify-between items-center justify-center">

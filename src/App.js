@@ -4,7 +4,7 @@ import Product from "./components/Product";
 
 function App() {
   return (
-    <div className="App">
+    <div className="w-screen h-screen">
       <Product />
     </div>
   );
